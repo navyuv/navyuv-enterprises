@@ -1,106 +1,604 @@
-<!DOCTYPE html>  
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NAVYUV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Deepak Kumar Sharma" />
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="navyuvbanner.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-    </div>
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Navyuv</h1><br>
-      <p class="w3-large">Canfectionery, Grocery and Stationary</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/navyuv.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
   
-  <hr>
-  
-  <!-- Menu Section -->
-  <div class="w3-row w3-padding-64" id="menu">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Our Menu</h1><br>
-      <h4>Bread Basket</h4>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h4>Honey Almond Granola with Fruits</h4>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h4>Scrambled eggs</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+  <!-- <div class="site-wrap"> -->
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
     </div>
     
-    <div class="w3-col l6 w3-padding-large">
-      <img src="navyuvbanner.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-    </div>
-  </div>
+    <header class="site-navbar py-3 js-site-navbar site-navbar-target" role="banner" id="site-navbar">
 
-  <hr>
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2 site-logo">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">NAVYUV</a></h1>
+            <p class="mb-0 text-white nowrap">by navyuventerprises</p>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
 
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contact</h1><br>
-    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="#section-home" class="nav-link">Home</a></li>
+                <li class="has-children">
+                  <a href="#section-about" class="nav-link">About Us</a>
+                  <ul class="dropdown">
+                    <li><a href="#section-how-it-works" class="nav-link">What's in the Shop</a></li>
+                    <li><a href="#section-our-team" class="nav-link">Our Team</a></li>
+                  </ul>
+                </li>
+                <li><a href="#section-services" class="nav-link">Shop Items</a></li>
+                <li><a href="#section-industries" class="nav-link">Photos</a></li>
+                <li><a href="#section-contact" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
   
-<!-- End page content -->
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
 
-</body>
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+            
+
+            <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">One Stop Shop For All Your Need</h1>
+            <p class="mb-5" data-aos="fade-up" data-aos-delay="100">Confectionery &bull; Grocery &bull; Stationery</p>
+            <p data-aos="fade-up" data-aos-delay="200" style="display:none"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="site-section" id="section-about">
+      <div class="container">
+        <div class="row mb-5">
+          
+          <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/img_3.jpg" alt="Image" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 order-md-1" data-aos="fade-up">
+            <div class="text-left pb-1 border-primary mb-4">
+              <h2 class="text-primary">About Us</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
+            <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
+            
+            <ul class="ul-check list-unstyled success">
+              <li>Error minus sint nobis dolor</li>
+              <li>Voluptatum porro expedita labore esse</li>
+              <li>Voluptas unde sit pariatur earum</li>
+            </ul>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="site-section bg-image overlay" style="background-image: url('images/hero_bg_4.jpg');" id="section-how-it-works">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="font-weight-light text-primary" data-aos="fade">What's in the Shop</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <div class="how-it-work-item">
+              <span class="number">C</span>
+              <div class="how-it-work-body">
+                <h2>Confectionery</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                <ul class="ul-check list-unstyled success">
+                  <li class="text-white">Error minus sint nobis dolor</li>
+                  <li class="text-white">Voluptatum porro expedita labore esse</li>
+                  <li class="text-white">Voluptas unde sit pariatur earum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="how-it-work-item">
+              <span class="number">G</span>
+              <div class="how-it-work-body">
+                <h2>Grocery</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                <ul class="ul-check list-unstyled success">
+                  <li class="text-white">Error minus sint nobis dolor</li>
+                  <li class="text-white">Voluptatum porro expedita labore esse</li>
+                  <li class="text-white">Voluptas unde sit pariatur earum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <div class="how-it-work-item">
+              <span class="number">S</span>
+              <div class="how-it-work-body">
+                <h2>Stationery</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                <ul class="ul-check list-unstyled success">
+                  <li class="text-white">Error minus sint nobis dolor</li>
+                  <li class="text-white">Voluptatum porro expedita labore esse</li>
+                  <li class="text-white">Voluptas unde sit pariatur earum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section border-bottom" id="section-our-team">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="font-weight-light text-primary" data-aos="fade">Our Owners</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <div class="person">
+              <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+              <h3>C. K. Choudhary</h3>
+              <p class="position text-muted">Owner</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="ul-social-circle">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="person">
+              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+              <h3>Anand Kumar</h3>
+              <p class="position text-muted">Owner</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="ul-social-circle">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <div class="person">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+              <h3>Deepak Kumar</h3>
+              <p class="position text-muted">Owner</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="ul-social-circle">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="site-section bg-light" id="section-services">
+      <div class="container">
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="mb-0 text-primary">Shop Items</h2>
+            <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div>
+              <div>
+                <h3>Air Freight</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div>
+              <div>
+                <h3>Ocean Freight</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div>
+              <div>
+                <h3>Land Transportation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div>
+              <div>
+                <h3>Warehousing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div>
+              <div>
+                <h3>Storage</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div>
+              <div>
+                <h3>Worldwide Delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="site-section block-13" id="section-industries">
+
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="mb-0 text-primary">Photos</h2>
+            <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="owl-carousel nonloop-block-13">
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Counter</h3>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Shop</h3>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Shop Front</h3>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Counter</h3>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Shop</h3>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+
+          <div class="col-md-7" data-aos="fade-up">
+            <a href="#" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
+            <h2 class="text-white font-weight-light mb-5 h1">Watch The Video</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>  
+    
+    <div class="site-section border-bottom">
+      <div class="container">
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="font-weight-light text-primary">Testimonials</h2>
+          </div>
+        </div>
+
+        <div class="slide-one-item home-slider owl-carousel">
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4">
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-3">
+                
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p class="author"> &mdash; C. K. Choudhary</p>
+              </blockquote>
+            </div>
+          </div>
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4">
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3">
+                
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p class="author"> &mdash; Anand Kumar</p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4">
+                <img src="images/person_4.jpg" alt="Image" class="img-fluid mb-3">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p class="author"> &mdash; Deepak Kumar</p>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="section-contact">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="font-weight-light text-primary">Contact Us</h2>
+            <!-- <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+
+            
+
+            <form action="#" class="p-5 bg-white">
+             
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          <div class="col-md-5">
+            
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold">Address</p>
+              <p class="mb-4">Shop No.1, Ground Floor, Mayakunj, Avantika, Ghaziabad, Uttar Pradesh, India</p>
+
+              <p class="mb-0 font-weight-bold">Phone</p>
+              <p class="mb-4"><a href="#">+91 986 8998 826</a></p>
+              <p class="mb-4"><a href="#">+91 975 9520 027</a></p>
+
+              <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="#">navyuventerprises@gmail.com</a></p>
+
+            </div>
+            
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">More Info</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
+              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Learn More</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5 mr-auto">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure deserunt ut architecto dolores quo beatae laborum aliquam ipsam rem impedit obcaecati ea consequatur.</p>
+              </div>
+              
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+            <form action="#" method="post">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+              <small class="block">&copy; <script>document.write(new Date().getFullYear());</script> Logis Free Template. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://free-template.co/" target="_blank">Free-Template.co</a></small> 
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  <!-- </div> -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
